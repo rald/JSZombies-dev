@@ -171,7 +171,7 @@
 
     function triggerAttack() {
       if (!actions['attack']) {
-        console.warn("Attack animation clip not found in model.glb! Check your clip names.");
+        console.warn("Attack animation clip not found in girl.glb! Check your clip names.");
         return;
       }
       isAttacking = true;
@@ -188,7 +188,7 @@
 
     const loader = new GLTFLoader();
     loader.load(
-      'model.glb',
+      'girl.glb',
       (gltf) => {
         characterModel = gltf.scene;
 
